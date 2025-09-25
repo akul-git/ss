@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* Example: design token */
+@theme {
+  --brand: #1a202c;
+}
+
+
+  body {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+   .logo-slider {
+    border-top: 2px solid #e5e7eb;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      background: #fff;
+      /* padding: 0.5rem 0; */
+      touch-action: pan-y;
+    }
+
+    .logo-track {
+      display: flex;
+      transition: transform 0.6s ease;
+           align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      flex: 0 0 25%; /* 4 logos visible (25% each). Change to 33.33% for 3 logos */
+ text-align: center;
+   display: flex;
+   justify-content: center;
+    }
+
+    .logo img {
+      /* height: 80px; */
+      @apply xl:h-[80px] 2xl:h-[100px];
+      width: auto;
+      /* filter: grayscale(100%);
+      transition: filter 0.3s; */
+    }
+
+   /*  .logo img:hover {
+      filter: grayscale(0%);
+    } */
+
+.testimonial-container{
+  position: relative;
+}
+.testimonial {
+position: absolute;
+ z-index: 0;
+  opacity: 0;
+transition: opacity 0.7s ease;
+}
+.testimonial.active {
+ z-index: 1;
+ position: absolute;
+  opacity: 1;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: orange;
+}
+
+
+
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
+}
+
+
+.mainNav li a:hover{
+  @apply bg-white/25;
+}

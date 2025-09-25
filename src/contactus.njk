@@ -1,0 +1,105 @@
+---
+title: Contact Us
+layout: layout.njk
+hideFooter: true
+---
+  <section class="grow bg-neutral-100 grid grid-cols-1 lg:grid-cols-2 overflow-y-auto">
+    <div class="grid lg:grid-rows-[auto_1fr] order-2">
+    <div class="hidden xl:block xl:bg-[url('../images/istockphoto-1752167914-2048x2048.jpg')] xl:bg-cover xl:h-64 2xl:h-[480px]"></div>
+      <!--<figure class="hidden lg:block">
+        <img src="/assets/images/istockphoto-1752167914-2048x2048.jpg" class:lg:max-h-20 alt="contact us">
+      </figure>-->
+      <div class="grid md:grid-cols-2 md:gap-x-4 *:p-4 grid-rows-[auto_1fr]">
+        <h2 class="col-span-2 font-bold flex gap-2">Survik Software Limited <span class="font-normal">India offshore
+            offices</span> </h2>
+        <address class="col-span-2 md:col-span-1 border-b border-neutral-300 md:border-none not-italic">
+
+          <h4 class="font-bold mb-2 uppercase">Pune</h4>
+          <p class="font-semibold">Tech Summit</p>
+          <p>Sr. No. 87, Plot No. 110,</p>
+          <p>Veerbhadra Nagar,</p>
+          <p>Priyanka Park, Baner Pune,</p>
+          <p>Maharashtra 411 045.</p>
+        </address>
+        <address class="not-italic">
+          <h4 class="font-bold mb-2 uppercase">Bengaluru</h4>
+          <p class="font-semibold">Bubblespace Coworking Pvt. Ltd</p>
+          <p>824, HRBR Layout 1st Block,</p>
+          <p>HRBR Extension, Kalyan Nagar,</p>
+          <p>Bengaluru, Karnataka 560043</p>
+        </address>
+      </div>
+    </div>
+   
+<div class="flex h-full items-center dark:bg-gray-900  xl:order-2">
+  <div class="container mx-auto">
+    <div class="max-w-xl mx-auto p-2">
+      <div class="m-4">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+          <input type="hidden" name="access_key" value="ed91ddf7-31c0-41f8-8a65-e57baa4486ea" />
+          <input type="hidden" name="subject" value="Contact Form Submission from survik.com">
+           <input type="hidden" name="from_name" value="survik.com">
+           <input type="hidden" name="redirect" value="https://www.survik.com">
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
+          <div class="h-captcha" data-captcha="true"></div>
+
+          <div class="flex mb-4 space-x-4">
+            <div class="w-full md:w-1/2">
+              <label for="fname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">First Name</label>
+              <input type="text" name="name" id="first_name" placeholder="Ankur" required class="w-full px-3 bg-white py-2 placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide your first name.
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <label for="lname" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Last Name</label>
+              <input type="text" name="last_name" id="lname" placeholder="Sharma" required class="w-full px-3 py-2 bg-white placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide your last name.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex mb-4 space-x-4">
+            <div class="w-full md:w-1/2">
+              <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="you@gmail.com" required class="w-full px-3 py-2 bg-white placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+              <div class="empty-feedback text-red-400 text-sm mt-1">
+                Please provide your email address.
+              </div>
+              <div class="invalid-feedback text-red-400 text-sm mt-1">
+                Please provide a valid email address.
+              </div>
+            </div>
+
+            <div class="w-full md:w-1/2">
+              <label for="phone" class="block text-sm mb-2 text-gray-600 dark:text-gray-400">Phone Number</label>
+              <input type="text" name="phone" id="phone" placeholder="+91 0123456789" required class="w-full px-3 py-2 bg-white placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
+
+              <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+                Please provide your phone number.
+              </div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+
+            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 bg-white placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
+            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
+              Please enter your message.
+            </div>
+          </div>
+          <div class="mb-4">
+            <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+              Send Message
+            </button>
+          </div>
+          <p class="text-base text-center text-gray-400" id="result"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  </section>
+ 

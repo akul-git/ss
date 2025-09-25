@@ -1,0 +1,20 @@
+{
+  "name": "eleventy-tailwind-v4",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run css:watch\" \"eleventy --serve\"",
+    "build": "npm run css:build && eleventy",
+    "css:build": "postcss src/styles/main.css -o src/styles/styles.css",
+    "css:watch": "postcss src/styles/main.css -o src/styles/styles.css --watch"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@tailwindcss/postcss": "4.1.13",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "4.1.13"
+  },
+  "type": "module"
+}
