@@ -48,7 +48,7 @@
     .caption {
         position: relative;
         z-index: 1;
-        padding: 1rem 1.5rem;
+        padding: 1rem;
         background: var(--caption-bg);
         border-radius: 12px;
         backdrop-filter: blur(2px);
@@ -56,6 +56,9 @@
         line-height: 1.3;
         text-align: center;
         color: white;
+        
+       /* align-self: flex-end;
+       margin-bottom: 4rem; */
     }
 
     /* Arrows */

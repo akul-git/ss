@@ -15,16 +15,21 @@
   <link href="/assets/fa/css/sharp-thin.css" rel="stylesheet" />
   <link href="/assets/fa/css/duotone.css" rel="stylesheet" />
   <link href="/assets/fa/css/sharp-duotone-thin.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans bg-gray-50 text-neutral-950 h-screen overflow-hidden m-0 p-0 flex flex-col text-sm xl:text-base">
+<body class="bg-gray-50 text-neutral-950 h-screen overflow-hidden m-0 p-0 flex flex-col text-base">
   <header class="flex items-center justify-between px-6 py-4 bg-gray-900 text-white">
     <div class="text-xl font-bold"><span class="flex gap-2 items-center"><img src="/assets/images/SVG/sl-icon.svg" class="h-11" alt="Survik Software Pvt Ltd"/><img src="/assets/images/SVG/ss3.svg" class="h-9" alt="Survik Software Pvt Ltd"/></span></div>
     <nav class="hidden xl:flex gap-6">
       <ul class="flex items-center gap-1 mainNav">
       <li><a href="/" class="flex gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/' %}bg-indigo-500 text-white font-bold{% endif %}"><i class="fa-regular fa-house"></i> Home</a></li>
       <li><a href="/aboutus/" class="flex gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/aboutus/' %}bg-indigo-500 text-white font-bold{% endif %}"><i class="fa-regular fa-building"></i> About</a></li>
-      <li><a href="/industries/" class="flex gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/industries/' %}bg-indigo-500 text-white font-bold{% endif %}"><i class="fa-regular fa-industry-windows"></i> Industries</a></li>
-      <li><a href="/services/" class=" gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/services/' %}bg-indigo-500 text-white font-bold{% endif %}"><i class="fa-light fa-list-check"></i> Services Offering</a></li>
+      <li><a href="/offerings/" class="flex gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/offerings/' %}bg-indigo-500 text-white font-bold{% endif %}"><i class="fa-regular fa-box-archive"></i> Our Offerings</a></li>
+      <li><a href="/testimonials/" class=" gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/testimonials/' %}bg-indigo-500 text-white font-bold{% endif %}"><i class="fa-regular fa-bullhorn"></i> What customers say</a></li>
+      <li><a href="/why_us/" class=" gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/why_us/' %}bg-indigo-500 text-white font-bold{% endif %}"><i class="fa-regular fa-check"></i> Why us</a></li>
+      <li><a href="/career/" class=" gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/career/' %}bg-indigo-500 text-white font-bold{% endif %}"><i class="fa-light fa-address-card"></i> Careers</a></li>
        <li><a href="/contactus/" class="flex gap-1.5 items-center px-4 py-2 rounded-full {% if page.url == '/contactus/' %}bg-indigo-500 text-white font-bold{% endif %}"> <i class="fa-regular fa-phone"></i> Contact Us</a></li>
       </ul>
     </nav>
@@ -48,8 +53,10 @@
       <ul class="flex flex-col gap-4">
         <li><a href="/" class="flex gap-4 items-center"><i class="fa-thin fa-house"></i> Home</a></li>
         <li><a href="/aboutus/" class="flex gap-4 items-center"><i class="fa-thin fa-industry-windows"></i> About us</a></li>
-		<li><a href="/industries/" class="flex gap-4 items-center"><i class="fa-thin fa-industry-windows"></i> Industries</a></li>
-        <li><a href="/services/" class="flex gap-4 items-center"><i class="fa-light fa-list-check"></i> Services Offering</a></li>
+		<li><a href="/offerings/" class="flex gap-4 items-center"><i class="fa-thin fa-box-archive"></i> Our Offerings</a></li>
+        <li><a href="/testimonials/" class="flex gap-4 items-center"><i class="fa-regular fa-bullhorn"></i> what customers say</a></li>
+        <li><a href="/why_us/" class="flex gap-4 items-center"><i class="fa-regular fa-check"></i> whay choose us</a></li>
+        <li><a href="/career/" class="flex gap-4 items-center"><i class="fa-light fa-address-card"></i> Careers</a></li>
         <li><a href="/contactus/" class="flex gap-4 items-center"> <i class="fa-thin fa-phone"></i> Contact Us</a></li>
       </ul>
     </nav>

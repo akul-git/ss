@@ -7,12 +7,13 @@
 
 
   body {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
+        font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
     }
-    
+
+
    .logo-slider {
     border-top: 2px solid #e5e7eb;
       overflow: hidden;
@@ -48,15 +49,38 @@
    /*  .logo img:hover {
       filter: grayscale(0%);
     } */
+.whyus h2{
+  @apply text-xl font-bold mb-2 text-indigo-600;
+}     
+.whyus  p{
+ @apply mb-4;
+}
+.offerings h2{@apply text-xl font-bold mb-2;}
 
+
+/*=testimonials------------  */
 .testimonial-container{
   position: relative;
+}
+.testimonial-container:before {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    content: ' ';
+    position: absolute;
+    right: 3rem;
+    bottom: -1rem;
+    transform: rotate(45deg);
 }
 .testimonial {
 position: absolute;
  z-index: 0;
   opacity: 0;
 transition: opacity 0.7s ease;
+background-color: white;
+padding: 2rem;
+border-radius: 1rem;
 }
 .testimonial.active {
  z-index: 1;
@@ -79,7 +103,7 @@ transition: opacity 0.7s ease;
 .dot.active {
   background-color: orange;
 }
-
+/*=testimonials------------  */
 
 
 .invalid-feedback,
