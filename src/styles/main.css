@@ -79,8 +79,7 @@ position: absolute;
   opacity: 0;
 transition: opacity 0.7s ease;
 background-color: white;
-padding: 2rem;
-border-radius: 1rem;
+@apply p-4 xl:p-8 rounded-lg xl:rounded-2xl;
 }
 .testimonial.active {
  z-index: 1;

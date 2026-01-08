@@ -34,7 +34,8 @@ hideFooter: true
 <div class="flex h-full items-center dark:bg-gray-900  xl:order-2">
   <div class="container mx-auto">
     <div class="max-w-xl mx-auto p-2">
-      <div class="m-4">
+      
+        <h2 class="text-2xl font-semibold mb-4">Get in touch with us</h2>
         <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
           <input type="hidden" name="access_key" value="ed91ddf7-31c0-41f8-8a65-e57baa4486ea" />
           <input type="hidden" name="subject" value="Contact Form Submission from survik.com">
@@ -45,14 +46,14 @@ hideFooter: true
 
           <div class="flex mb-4 space-x-4">
             <div class="w-full md:w-1/2">
-              <label for="fname" class="block mb-2 text-gray-800 dark:text-gray-400">First Name</label>
+              <label for="fname" class="block mb-2 text-sm text-gray-700 dark:text-gray-400">First Name</label>
               <input type="text" name="name" id="first_name" placeholder="Ankur" required class="w-full px-3 bg-white py-2 placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
               <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
                 Please provide your first name.
               </div>
             </div>
             <div class="w-full md:w-1/2">
-              <label for="lname" class="block mb-2 text-gray-800 dark:text-gray-400">Last Name</label>
+              <label for="lname" class="block mb-2 text-sm text-gray-700 dark:text-gray-400">Last Name</label>
               <input type="text" name="last_name" id="lname" placeholder="Sharma" required class="w-full px-3 py-2 bg-white placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
               <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
                 Please provide your last name.
@@ -62,7 +63,7 @@ hideFooter: true
 
           <div class="flex mb-4 space-x-4">
             <div class="w-full md:w-1/2">
-              <label for="email" class="block mb-2 text-gray-800 dark:text-gray-400">Email Address</label>
+              <label for="email" class="block mb-2 text-sm text-gray-700 dark:text-gray-400">Email Address</label>
               <input type="email" name="email" id="email" placeholder="you@gmail.com" required class="w-full px-3 py-2 bg-white placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
               <div class="empty-feedback text-red-400 text-sm mt-1">
                 Please provide your email address.
@@ -73,7 +74,7 @@ hideFooter: true
             </div>
 
             <div class="w-full md:w-1/2">
-              <label for="phone" class="block mb-2 text-gray-800 dark:text-gray-400">Phone Number</label>
+              <label for="phone" class="block text-sm mb-2 text-gray-700 dark:text-gray-400">Phone Number</label>
               <input type="text" name="phone" id="phone" placeholder="+91 0123456789" required class="w-full px-3 py-2 bg-white placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" />
 
               <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -82,7 +83,7 @@ hideFooter: true
             </div>
           </div>
           <div class="mb-4">
-            <label for="message" class="block mb-2 text-sm text-gray-800 dark:text-gray-400">Your Message</label>
+            <label for="message" class="block mb-2 text-sm text-gray-700 dark:text-gray-400">Your Message</label>
 
             <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 bg-white placeholder-gray-300 border-2 border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300" required></textarea>
             <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">
@@ -96,7 +97,7 @@ hideFooter: true
           </div>
           <p class="text-base text-center text-gray-400" id="result"></p>
         </form>
-      </div>
+      
     </div>
   </div>
 </div>
