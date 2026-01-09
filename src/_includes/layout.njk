@@ -51,13 +51,13 @@
   <div id="mobileMenu" class="fixed top-0 left-[-80%] w-[80%] md:w-1/2 h-full bg-neutral-950/25 backdrop-blur-3xl text-white  p-4 transition-all z-50">
     <nav>
       <ul class="flex flex-col gap-4">
-        <li><a href="/" class="flex gap-4 items-center"><i class="fa-thin fa-house"></i> Home</a></li>
-        <li><a href="/aboutus/" class="flex gap-4 items-center"><i class="fa-thin fa-industry-windows"></i> About us</a></li>
-		<li><a href="/offerings/" class="flex gap-4 items-center"><i class="fa-thin fa-box-archive"></i> Our Offerings</a></li>
-        <li><a href="/testimonials/" class="flex gap-4 items-center"><i class="fa-regular fa-bullhorn"></i> what customers say</a></li>
-        <li><a href="/why_us/" class="flex gap-4 items-center"><i class="fa-regular fa-check"></i> whay choose us</a></li>
-        <li><a href="/career/" class="flex gap-4 items-center"><i class="fa-light fa-address-card"></i> Careers</a></li>
-        <li><a href="/contactus/" class="flex gap-4 items-center"> <i class="fa-thin fa-phone"></i> Contact Us</a></li>
+        <li><a href="/" class="flex gap-4 items-center p-2 {% if page.url == '/' %}from-indigo-500 bg-gradient-to-r rounded-full text-white font-bold{% endif %}"><i class="fa-thin fa-house"></i> Home</a></li>
+        <li><a href="/aboutus/" class="flex gap-4 items-center p-2 {% if page.url == '/aboutus/' %}from-indigo-500 bg-gradient-to-r rounded-full text-white font-bold{% endif %}"><i class="fa-thin fa-industry-windows"></i> About us</a></li>
+		<li><a href="/offerings/" class="flex gap-4 items-center p-2 {% if page.url == '/offerings/' %}from-indigo-500 bg-gradient-to-r rounded-full text-white font-bold{% endif %}"><i class="fa-thin fa-box-archive"></i> Our Offerings</a></li>
+        <li><a href="/testimonials/" class="flex gap-4 items-center p-2 {% if page.url == '/testimonials/' %}from-indigo-500 bg-gradient-to-r rounded-full text-white font-bold{% endif %}"><i class="fa-regular fa-bullhorn"></i> what customers say</a></li>
+        <li><a href="/why_us/" class="flex gap-4 items-center p-2 {% if page.url == '/why_us/' %}from-indigo-500 bg-gradient-to-r rounded-full text-white font-bold{% endif %}"><i class="fa-regular fa-check"></i> whay choose us</a></li>
+        <li><a href="/career/" class="flex gap-4 items-center p-2 {% if page.url == '/career/' %}from-indigo-500 bg-gradient-to-r rounded-full text-white font-bold{% endif %}"><i class="fa-light fa-address-card"></i> Careers</a></li>
+        <li><a href="/contactus/" class="flex gap-4 items-center p-2 {% if page.url == '/contactus/' %}from-indigo-500 bg-gradient-to-r rounded-full text-white font-bold{% endif %}"> <i class="fa-thin fa-phone"></i> Contact Us</a></li>
       </ul>
     </nav>
   </div>

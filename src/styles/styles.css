@@ -243,9 +243,6 @@
   .left-\[-80\%\] {
     left: -80%;
   }
-  .z-10 {
-    z-index: 10;
-  }
   .z-40 {
     z-index: 40;
   }
@@ -504,12 +501,20 @@
   .bg-yellow-100 {
     background-color: var(--color-yellow-100);
   }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
   .bg-gradient-to-t {
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\/assets\/images\/services-imgs\/istockphoto-1178515843-2048x2048-our-offerings\.jpg\'\)\] {
-    background-image: url('/assets/images/services-imgs/istockphoto-1178515843-2048x2048-our-offerings.jpg');
+  .bg-\[linear-gradient\(rgba\(255\,255\,255\,0\.80\)\,rgba\(255\,255\,255\,0\.80\)\)\,url\(\'\/assets\/images\/services-imgs\/istockphoto-1178515843-2048x2048-our-offerings\.jpg\'\)\] {
+    background-image: linear-gradient(rgba(255,255,255,0.80),rgba(255,255,255,0.80)),url('/assets/images/services-imgs/istockphoto-1178515843-2048x2048-our-offerings.jpg');
+  }
+  .from-indigo-500 {
+    --tw-gradient-from: var(--color-indigo-500);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-white\/95 {
     --tw-gradient-from: color-mix(in srgb, #fff 95%, transparent);
@@ -939,9 +944,9 @@
       height: calc(var(--spacing) * 64);
     }
   }
-  .xl\:w-6xl {
+  .xl\:w-5\/6 {
     @media (width >= 80rem) {
-      width: var(--container-6xl);
+      width: calc(5/6 * 100%);
     }
   }
   .xl\:max-w-\[400px\] {
@@ -971,19 +976,14 @@
       }
     }
   }
-  .\32 xl\:col-span-1 {
-    @media (width >= 96rem) {
-      grid-column: span 1 / span 1;
-    }
-  }
   .\32 xl\:h-\[480px\] {
     @media (width >= 96rem) {
       height: 480px;
     }
   }
-  .\32 xl\:max-w-80 {
+  .\32 xl\:w-full {
     @media (width >= 96rem) {
-      max-width: calc(var(--spacing) * 80);
+      width: 100%;
     }
   }
   .\32 xl\:max-w-\[600px\] {
