@@ -57,7 +57,6 @@
 }
 .offerings h2{@apply text-xl font-bold mb-2;}
 
-
 /*=testimonials------------  */
 .testimonial-container{
   position: relative;
@@ -81,6 +80,7 @@ transition: opacity 0.7s ease;
 background-color: white;
 @apply p-4 xl:p-8 rounded-lg xl:rounded-2xl;
 }
+
 .testimonial.active {
  z-index: 1;
  position: absolute;
